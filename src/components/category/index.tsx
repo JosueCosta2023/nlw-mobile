@@ -1,4 +1,4 @@
-import { View, Text, Pressable, PressableProps } from "react-native";
+import { Text, Pressable, PressableProps } from "react-native";
 import {s} from './style'
 import { categoriesIcons } from "@/utils/categories-icons";
 import { colors } from "@/styles/theme";

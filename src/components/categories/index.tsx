@@ -1,4 +1,4 @@
-import { View, FlatList } from "react-native";
+import { FlatList } from "react-native";
 import {s} from "./style"
 import { Category } from "../category";
 
@@ -17,12 +17,12 @@ export function Categories({data}: Props){
         <FlatList
             data={data}
             keyExtractor={(item) => item.id}
-            renderItem={(item)=> <Category name={item.item.name} iconId={item.item.id}/>}
+            renderItem={({item})=> <Category name={item.name} iconId={item.id}/>}
             horizontal
             showsHorizontalScrollIndicator={false}
-            contentContainerStyle={s.container}
+            contentContainerStyle={s.content}
             style={s.container}
         />
             
     )
-}
+} 

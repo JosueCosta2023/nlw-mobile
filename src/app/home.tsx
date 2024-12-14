@@ -1,4 +1,4 @@
-import { View, Text, Alert } from "react-native";
+import { View, Alert } from "react-native";
 import { api } from "@/services/api";
 import { useEffect, useState } from "react";
 import { Categories, CategoriesProps } from "@/components/categories";
@@ -24,7 +24,7 @@ export default function Home(){
     }, [])
     
 return(
-    <View style={{flex: 1, justifyContent: "center", alignItems: "center"}}>
+    <View style={{flex: 1, justifyContent: "center", alignItems: "center",  }}>
         <Categories data={categories}/>
     </View>
 )
