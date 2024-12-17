@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Categories, CategoriesProps } from "@/components/categories";
 import { PlaceProps } from "@/components/place";
 import { Places } from "@/components/places";
+import MapView from "react-native-maps";
 
 type MarketsProps = PlaceProps & {}
 
@@ -50,8 +51,17 @@ export default function Home(){
     }, [category])
     
 return(
-    <View style={{flex: 1, justifyContent: "center", alignItems: "center",  backgroundColor: "red" }}>
+    <View style={{flex: 1, justifyContent: "center", alignItems: "center",  backgroundColor: "gray" }}>
         <Categories data={categories} onSelect={setCategory} selected={category}/>
+        <MapView
+            style={{flex: 1, width: "100%",height: "100%"}}
+            region={{
+                latitude: -13.44800803657451,
+                longitude: -56.720215005608225,
+                latitudeDelta: 0.015,
+                longitudeDelta: 0.0121,
+              }}
+        />
         <Places data={markets}/>
     </View>
 )
