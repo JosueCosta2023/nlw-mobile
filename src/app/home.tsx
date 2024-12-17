@@ -5,8 +5,14 @@ import { Categories, CategoriesProps } from "@/components/categories";
 import { PlaceProps } from "@/components/place";
 import { Places } from "@/components/places";
 import MapView from "react-native-maps";
+import * as Location from 'expo-location';
 
 type MarketsProps = PlaceProps & {}
+
+const currentLocation = {
+    latitude: -13.450677,
+    longetude: -56.7290972
+}
 
 
 export default function Home(){
@@ -42,6 +48,21 @@ export default function Home(){
         }
     }
 
+    async function getCurrentLocation(){
+    try {
+        const {granted} = await Location.requestForegroundPermissionsAsync()
+        if(granted){
+           const location =  await Location.getCurrentPositionAsync({})
+           console.log(location)
+        }
+
+        
+    } catch (error) {
+        console.log(error);
+        Alert.alert("Localização:", "Impossivel identificar sua localização")
+    }
+    }
+
     useEffect(() =>{
         fetchCategories()
     }, [])
@@ -56,10 +77,10 @@ return(
         <MapView
             style={{flex: 1, width: "100%",height: "100%"}}
             region={{
-                latitude: -13.44800803657451,
-                longitude: -56.720215005608225,
-                latitudeDelta: 0.015,
-                longitudeDelta: 0.0121,
+                latitude: currentLocation.latitude,
+                longitude: currentLocation.longetude,
+                latitudeDelta: 0.01,
+                longitudeDelta: 0.01,
               }}
         />
         <Places data={markets}/>
