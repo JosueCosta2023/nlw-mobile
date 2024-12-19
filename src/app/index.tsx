@@ -12,7 +12,7 @@ export default function Index() {
         <Welcome />
         <Steps />
         <Button onPress={() => router.navigate("/home")}>
-          <Button.Title>Iniciar em 28:54</Button.Title>
+          <Button.Title>Iniciar em 43:28</Button.Title>
         </Button>
       </View>
     </StrictMode>
