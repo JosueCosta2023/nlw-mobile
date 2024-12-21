@@ -1,15 +1,18 @@
 # Buscador de Cupons Promocionais
 
 Olá, seja bem!
-Este sistema foi desenvolvido com a finalidade de falicitar a busca por cupons promocionais. Ele esta disponivel para clonagem, siga os passos e o adapte de acordo com a sua realidade
+Este sistema foi desenvolvido em um bootcamp da RocketSeat, ele tem a finalidade de falicitar a busca por cupons promocionais. Ele esta disponivel para clonagem, siga os passos e o adapte de acordo com a sua realidade
 
 ## Visão Geral
 
+O Buscador de Cupons Promocionais é um aplicativo desenvolvido para simplificar a busca e utilização de cupons promocionais de lojas parceiras. Ele oferece aos usuários uma maneira prática e rápida de acessar descontos exclusivos, promovendo economia e conveniência. A aplicação é voltada tanto para consumidores que desejam aproveitar ofertas promocionais quanto para lojistas que buscam aumentar o engajamento e fidelização de clientes.
+
+Com funcionalidades como leitura de QR Codes e exibição de lojas próximas ao usuário, o sistema oferece uma experiência fluida e intuitiva. Este projeto está disponível para clonagem e personalização, permitindo sua adaptação conforme as necessidades do desenvolvedor.
 
 
 ## Funcionalidades
 
-- **Listagem de lojas parceiras:** Tras a listagem de todas lojas que participam do sistema.
+- **Listagem de lojas parceiras:** Tras a listagem de todas lojas parceiras do sistema.
 - **Leitura de QrCode:** É possivel ler o QrCode promocional nas lojas parceiras e utilizar os cupons disponíveis.
 
 ## Tecnologias Utilizadas
@@ -22,6 +25,8 @@ Este sistema foi desenvolvido com a finalidade de falicitar a busca por cupons p
 ## Instalação
 
 Para rodar este projeto localmente, siga os passos abaixo:
+Atenção, o backend atual deste aplicativo e muito simples e sem segurança pois foi desenvolvido somente para testar as funcionalidades do frontend.
+Fique a vontade para desenvolver seu proprio backend com os niveis de segurança que achar necessário.
 
 
 ### FrontEnd
@@ -66,7 +71,7 @@ Para rodar este projeto localmente, siga os passos abaixo:
 
 
 ## Uso
-O sistema irá exibir as lojas cadastradas de acordo com a sua localizção, ao clicar sobre a loja você será direcionado a pagina de detalhes onde sera possivel ler o qrcode promocional e regastar seus cupons promocionais.
+O sistema irá exibir as lojas cadastradas de acordo com a sua localização, ao clicar sobre a loja você será direcionado a pagina de detalhes onde sera possivel ler o qrcode promocional e regastar seus cupons promocionais.
 
 ## Estrutura do Projeto
 * `src/app/start`: Pagina inicial, contém um breve tutorial de como utilizar o aplicativo. 
@@ -77,6 +82,7 @@ O sistema irá exibir as lojas cadastradas de acordo com a sua localizção, ao 
 
 ## Author
 ### Josué Ocanha Costa
+### Paceiros de Desenvolvimento - Bootcamp RocketSeat
 #### FrontEnd Developer
 #### Redes Sociais
 
